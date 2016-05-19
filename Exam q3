@@ -51,3 +51,31 @@ a)  Explain what a Stack is.  Specify if it is LIFO or FIFO.
 b)  Complete the Stack class by writing the "pop" method.
 c)  Explain what a Queue is.  Specify if it is LIFO or FIFO.
 d)  Complete the Queue class by writing the "peek" and "remove" methods.
+
+a) A stack is an abstract data type that serves as a collection of elements, with two principal 
+operations: push, which adds an element to the collection, and pop, which removes the most recently added 
+element that was not yet removed.
+It is LIFO
+
+b)
+  public Lnk pop(){
+    Lnk output = head;
+    this.head=this.head.getNext();
+    length=length-1;
+    return output;}
+
+
+c)a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept 
+in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal 
+position, known as enqueue, and removal of entities from the front terminal position, known as dequeue.
+It is FIFO
+
+d)  public DLnk remove(){
+    DLnk output = this.head;
+    removeHead();
+    this.head=this.head.getPrev();
+    return output;}
+  
+  public DLnk peek(){
+    return this.head;}
+
