@@ -58,9 +58,9 @@ element that was not yet removed.
 It is LIFO
 
 b)
-  public Lnk pop(){
-    Lnk output = head;
-    this.head=this.head.getNext();
+  public Link pop(){
+    Link output = head;
+    head=head.getNext();
     length=length-1;
     return output;}
 
@@ -70,12 +70,12 @@ in order and the principal (or only) operations on the collection are the additi
 position, known as enqueue, and removal of entities from the front terminal position, known as dequeue.
 It is FIFO
 
-d)  public DLnk remove(){
-    DLnk output = this.head;
+d)  public Link remove(){
+    Link output = head;
     removeHead();
-    this.head=this.head.getPrev();
+    head=head.getPrev();
     return output;}
   
   public DLnk peek(){
-    return this.head;}
+    return head;}
 
