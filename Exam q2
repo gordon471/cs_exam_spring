@@ -15,7 +15,7 @@ b)  Write a complete class for a language speaker of your choice, like ItalianSp
 
 a)An interface is a reference type in Java, it is similar to class, it is a collection of abstract methods.
 
-b)public class EnglishSpeaker implements Greetings{
+b)public class EnglishSpeaker interface Greetings{
 
 public String FormalHello(){
   System.out.println(HI);
