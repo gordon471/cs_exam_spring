@@ -19,3 +19,19 @@ a)  Write a subclass to Technology with a class called Smartphone.
 b)  Explain what INHERITANCE is.
 c)  Write a "speak" method for Smartphone that states the "name" and "number".  
 d)  What is this called when we write a subclass method which overrides a super class method?
+
+a)public class Smartphone extends Technology{
+   int number;
+   public Smartphone(String name, int number){
+   super(name);
+   this.number=number;}}
+b)Polymorphism is the ability of an object to take on many forms. 
+
+c)public String speak(){
+System.out.println("I am "+ this.name+ "And my number is "+this.number);
+}
+d)inheritance
+
+
+
+   
